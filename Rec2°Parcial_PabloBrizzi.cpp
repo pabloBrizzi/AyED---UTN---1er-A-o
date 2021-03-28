@@ -1,12 +1,14 @@
-/* Durante la pandemia los alumnos fueron entregado trabajos pr醕ticos 
+/*------------RECUPERATORIO SEGUNDO PARCIAL - PABLO BRIZZI | LEG: 30743*/
+
+/* Durante la pandemia los alumnos fueron entregado trabajos pr谩cticos 
 y se iban cargando en una cola para su posterior procesamiento 
-con los siguientes datos: dni-alumno, apellido_nombre, trabajos-entregados y calificaci髇. 
-La calificaci髇 se obtiene del siguiente criterio de valoraci髇:
-Se sabe que son 10 trabajos pr醕ticos
-Si el alumno ha cumplido el 80% estar韆 Aprobado
-Si el alumno ha cumplido entre el 50% y 79,99% deber韆 realizar un Repechaje
-Otro caso estar韆 Desaprobado
-En funci髇 de la calificaci髇 que obtuvieron los alumnos se genera una lista de control con los alumnos 
+con los siguientes datos: dni-alumno, apellido_nombre, trabajos-entregados y calificaci贸n. 
+La calificaci贸n se obtiene del siguiente criterio de valoraci贸n:
+Se sabe que son 10 trabajos pr谩cticos
+Si el alumno ha cumplido el 80% estar铆a Aprobado
+Si el alumno ha cumplido entre el 50% y 79,99% deber铆a realizar un Repechaje
+Otro caso estar铆a Desaprobado
+En funci贸n de la calificaci贸n que obtuvieron los alumnos se genera una lista de control con los alumnos 
 que tienen que ir a Repechaje y Aprobados, con la siguiente datos: 
 dni-alumno, apellido_nombre , trabajos-entregados, estado.
 
@@ -65,7 +67,7 @@ dato Consultar(t_cola* cola){
 }
 //*/
 
-void ImprimoLista(listatp *cabeza){ //PRUEBA DE IMPRESI覰 DE LISTA
+void ImprimoLista(listatp *cabeza){ //PRUEBA DE IMPRESI脫N DE LISTA
 	if(cabeza==0){
 		printf("\nLista Vacia");
 	}
