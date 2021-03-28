@@ -1,4 +1,6 @@
-/*------------PROGRAMA PRIMER PARCIAL: PABLO BRIZZI-----------*/
+/*------------PROGRAMA PRIMER PARCIAL: PABLO BRIZZI | Leg: 30743 -----------*/
+
+/*Se evalu√≥ manejo de datos de Tipo Lista, definici√≥n de Variables, Procedimientos y Funciones en Lenguaje C*/
 
 #include<conio.h>
 #include<stdio.h>
@@ -8,23 +10,23 @@
 /*--------------------DATOS ENUNCIADO-----------------------
 
    15 Diferentes Tipos de Barbijos
-   N∞ de piezas diferentes e/barbijos. de entre 20 piezas.
+   N¬∞ de piezas diferentes e/barbijos. de entre 20 piezas.
    Cada barbijo solo cuenta con 1 pieza distinta.
    
    --------------------SOLICITUDES-------------------------
-1.   En primer lugar se proceder· a la lectura de la informaciÛn que 
-     indican cu·les son las piezas de cada barbijo. 
-     El usuario introducir· la informaciÛn relativos a los 15 tipos diferentes, 
-     indicando primero el n˙mero de piezas que tiene.
+1.   En primer lugar se proceder√° a la lectura de la informaci√≥n que 
+     indican cu√°les son las piezas de cada barbijo. 
+     El usuario introducir√° la informaci√≥n relativos a los 15 tipos diferentes, 
+     indicando primero el n√∫mero de piezas que tiene.
 
-2.  A continuaciÛn, se deber· tener en cuenta que la producciÛn del mes termina 
-    cuando se trabaja un ciclo de 20 dÌas donde en cada dÌa se leer la cantidad 
+2.  A continuaci√≥n, se deber√° tener en cuenta que la producci√≥n del mes termina 
+    cuando se trabaja un ciclo de 20 d√≠as donde en cada d√≠a se leer la cantidad 
     de barbijos que se confeccionaran.
 
-3. Para realizar los pedidos correspon	dientes, se deben contar el n˙mero de 
+3. Para realizar los pedidos correspon	dientes, se deben contar el n√∫mero de 
    piezas que se necesitan cada mes y escribirlos en la pantalla.
 
-4. El programa deber· determinar sobre el total de piezas que conforman el 
+4. El programa deber√° determinar sobre el total de piezas que conforman el 
    barbijo que porcentaje corresponde a cada pieza sobre el total utilizado en el mes.
    
 */
@@ -33,15 +35,15 @@
 
 #define tipoB 2 //PASAR A 15 --- Tipo de barbijos
 #define tipoP 3 //PASAR A 20 ---- Tipo de piezas
-#define cicloProd 2 //PASAR A 20 ---- Cant de dÌas del ciclo de Prod
+#define cicloProd 2 //PASAR A 20 ---- Cant de d√≠as del ciclo de Prod
 
 //-------------------DECLARO LOS PROCEDIMIENTOS---------------------
 
 void inicializar(int m[tipoB][tipoP],int vecB[tipoB],int vecP[tipoP], int tb, int tp); //Procedimiento de inicializacion de matrices y Vectores
 void piezXbarb(int m[tipoB][tipoP], int tb, int tp); //proc. donde identifico el tipo de pieza por barbijo asignando un 1 en el casillero de la matriz correspondiente al tipo de barbijo y tipo de pieza
-void lectProdDiaria(int vecB[tipoB],int tb, int dia);//proc. que lee la producciÛn diaria de barbijos y los guarda en el vector produccion
-void contarPieza(int m[tipoB][tipoP],int vecB[tipoB],int vecP[tipoP],int tb,int tp); // proc. que calcula la cantidad de piezas mensuales necesarias conforme la identificaciÛn en la matriz de "piezaXbarbijo" y la cantidad de barbijos a producir por tipo cargada
-void informePiezas(int m[tipoB][tipoP],int vecB[tipoB],int vecP[tipoP],int tb,int tp); // ImpresiÛn del % de pieza por barbijo sobre el total de piezas del mes
+void lectProdDiaria(int vecB[tipoB],int tb, int dia);//proc. que lee la producci√≥n diaria de barbijos y los guarda en el vector produccion
+void contarPieza(int m[tipoB][tipoP],int vecB[tipoB],int vecP[tipoP],int tb,int tp); // proc. que calcula la cantidad de piezas mensuales necesarias conforme la identificaci√≥n en la matriz de "piezaXbarbijo" y la cantidad de barbijos a producir por tipo cargada
+void informePiezas(int m[tipoB][tipoP],int vecB[tipoB],int vecP[tipoP],int tb,int tp); // Impresi√≥n del % de pieza por barbijo sobre el total de piezas del mes
 float promTotalP(int vecB[tipoB],int vecP[tipoP], int b, int p); //Funcion que calcula el % de la participacion de cada pieza por barbijo del total de piezas a utilizar en el mes
 int main(){
 	int piezaXbarbijo[tipoB][tipoP];
