@@ -5,12 +5,12 @@
 	
 	/*El problema se basaba en una empresa de reparto, que realizaba la entrega de pedidos
 	  entre distintas ciudades, o en la misma.
-	  Constaba de crear una pila, a medida que los vehiculos llegaban al depÛsito General
-	  y luego una vez finalizado el dÌa una lista con los vehÌculos ordenados por idVehiculo.
-	  Las esturcturas eran plantedas asÌ como ID, lo que facilitaba el manejo de comparaciones y dem·s.
+	  Constaba de crear una pila, a medida que los vehiculos llegaban al dep√≥sito General
+	  y luego una vez finalizado el d√≠a una lista con los veh√≠culos ordenados por idVehiculo.
+	  Las esturcturas eran plantedas as√≠ como ID, lo que facilitaba el manejo de comparaciones y dem√°s.
 	  las consultas a resolver de manera recursiva al final eran:
-	  	1) Obtener la cantidad de pedidos por vehÌculos.
-		2) Obtener del total de entregas cuantas pertenecÌan a la misma ciudad.*/
+	  	1) Obtener la cantidad de pedidos por veh√≠culos.
+		2) Obtener del total de entregas cuantas pertenec√≠an a la misma ciudad.*/
 		
 	
 	typedef struct pilaLlegada{
@@ -69,7 +69,7 @@
 		printf("\n----------------------------");
 		printf("\nEl %% de entregas de la misma ciudad es: %.2f", (((float)entregasMismaCiudad(cabezaIdVeh)/(float)cantEntregas(cabezaIdVeh))*100));
 		printf("\n");
-		printf("\nLa cant. de entregas del mismo vehÌculo es: %i", entregasMismaCiudad(cabezaIdVeh));
+		printf("\nLa cant. de entregas del mismo veh√≠culo es: %i", entregasMismaCiudad(cabezaIdVeh));
 		printf("\n");
 		getch();
 		return 0;
@@ -148,7 +148,7 @@
 		scanf("%i", &*idCO);
 		printf("\nIngrese el ID-Ciudad Destino: ");
 		scanf("%i", &*idCD);
-		printf("\nIngrese el ID-VehÌculo: ");
+		printf("\nIngrese el ID-Veh√≠culo: ");
 		scanf("%i", &*idV);
 	}
 	
